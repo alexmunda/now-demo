@@ -4,7 +4,9 @@
   "description": "Demo of Zeit now",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=production node dist_server/server.js",
+    "build": "npm run clean && webpack --config webpack.config.babel.js && mkdir dist_server && babel src --out-dir dist_server",
+    "clean": "del-cli dist dist_server"
   },
   "repository": {
     "type": "git",
@@ -22,6 +24,16 @@
   },
   "homepage": "https://github.com/alexmunda/now-demo#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "app-root-path": "2.0.1",
+    "express": "4.14.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.14.0",
+    "babel-loader": "6.2.5",
+    "babel-preset-es2015": "6.14.0",
+    "del-cli": "0.2.0",
+    "elm-webpack-loader": "^3.0.6",
+    "file-loader": "0.9.0",
+    "webpack": "1.13.2"
   }
 }

@@ -9,6 +9,11 @@ Install now
 npm install now -g
 ```
 
+Install Elm
+```
+npm install elm -g
+```
+
 ## now-serve
 Build the project
 ```

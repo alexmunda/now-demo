@@ -38,7 +38,7 @@ view : Model -> Html Msg
 view model =
     div [ class "container" ]
         [ div [ class "row" ]
-            [ input [ class "col-md-4 col-md-offset-4", type' "text", placeholder "Name", onInput Name ] []
+            [ input [ class "col-md-4 col-md-offset-4", type' "text", placeholder "Enter your name", onInput Name ] []
             , welcomeText model
             ]
         ]

@@ -1,10 +1,20 @@
 # now-demo
-Demo of Zeit now
+Install now
+```
+npm install now -g
+```
 
+Build the project
 ```
 npm install
 
 elm-package install
 
-npm start
+npm run build
+```
+
+Deploy with now-serve
+```
+cd dist
+now-serve
 ```

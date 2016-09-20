@@ -2,7 +2,6 @@
   "name": "now-demo",
   "version": "1.0.0",
   "description": "Demo of Zeit now",
-  "main": "index.js",
   "scripts": {
     "start": "npm run build && npm run serve",
     "build": "npm run clean && webpack --config webpack.config.babel.js",

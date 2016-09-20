@@ -1,4 +1,9 @@
 # now-demo
+Clone the project
+```
+git clone https://github.com/alexmunda/now-demo.git
+```
+
 Install now
 ```
 npm install now -g
